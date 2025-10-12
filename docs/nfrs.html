@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Non-Functional Requirements (NFR) Tests</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <p><a href="index.html">← Back to Home</a></p>
+
+  <h1>Non-Functional Requirements (NFR) Tests</h1>
+
+  <h2>Summary Table</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>NFR Category</th>
+        <th>Tests</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>NFR1 —</strong> <em>ML training performance</em></td>
+        <td><a href="#nfr1_1">NFR1.1</a></td>
+      </tr>
+      <tr>
+        <td><strong>NFR2 —</strong> <em>Trainer selection accuracy and logic</em></td>
+        <td><a href="#nfr2_1">NFR2.1</a>, <a href="#nfr2_2">NFR2.2</a></td>
+      </tr>
+      <tr>
+        <td><strong>NFR3 —</strong> <em>Security</em></td>
+        <td><a href="#nfr3_1">NFR3.1</a></td>
+      </tr>
+      <tr>
+        <td><strong>NFR4 —</strong> <em>Data persistence performance</em></td>
+        <td><a href="#nfr4_1">NFR4.1</a>, <a href="#nfr4_2">NFR4.2</a></td>
+      </tr>
+      <tr>
+        <td><strong>NFR5 —</strong> <em>Responsive design</em></td>
+        <td><a href="#nfr5_1">NFR5.1</a>, <a href="#nfr5_2">NFR5.2</a>, <a href="#nfr5_3">NFR5.3</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <hr>
+
+  <h2>ML Performance Tests</h2>
+
+  <h3 id="nfr1_1">NFR1.1 — ML training completes in under 5s when trained on 50 historic workouts</h3>
+  <video controls src="test_video_evidence/NFR1.1_1.2_Evidence.mp4" width="1000"></video>
+
+  <hr>
+
+  <h2>Trainer Selection Tests</h2>
+
+  <h3 id="nfr2_1">NFR2.1 — Trainer selection on small dataset (50) — meets MAE &lt; 10% and real-world logic</h3>
+  <video controls src="test_video_evidence/NFR1.1_1.2_Evidence.mp4" width="1000"></video>
+
+  <h3 id="nfr2_2">NFR2.2 — Trainer selection on large dataset (500) — meets MAE &lt; 10% and real-world logic</h3>
+  <video controls src="test_video_evidence/NFR2.2_Evidence.MP4" width="1000"></video>
+
+  <hr>
+
+  <h2>Security Tests</h2>
+
+  <h3 id="nfr3_1">NFR3.1 — Passwords stored securely using PBKDF2</h3>
+  <video controls src="test_video_evidence/NFR3.1_Evidence.MP4" width="1000"></video>
+
+  <hr>
+
+  <h2>Data Persistence Tests</h2>
+
+  <h3 id="nfr4_1">NFR4.1 — Goal data persists to DB within 2s</h3>
+  <video controls src="test_video_evidence/NFR4.1_Evidence.MP4" width="1000"></video>
+
+  <h3 id="nfr4_2">NFR4.2 — Workout data persists to DB within 2s</h3>
+  <video controls src="test_video_evidence/NFR4.2_Evidence.MP4" width="1000"></video>
+
+  <hr>
+
+  <h2>Responsive Design Tests</h2>
+
+  <h3 id="nfr5_1">NFR5.1 — Dashboard responsive on desktop</h3>
+  <video controls src="test_video_evidence/NFR5.1_Evidence.MP4" width="1000"></video>
+
+  <h3 id="nfr5_2">NFR5.2 — Dashboard responsive on tablet</h3>
+  <video controls src="test_video_evidence/NFR5.2_Evidence.MP4" width="1000"></video>
+
+  <h3 id="nfr5_3">NFR5.3 — Dashboard responsive on mobile</h3>
+  <video controls src="test_video_evidence/NFR5.3_Evidence.MP4" width="1000"></video>
+
+</body>
+</html>
